@@ -1,0 +1,30 @@
+.formContainer {
+  max-width: 360px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #567d6b;
+}
+
+.formFieldInput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input {
+  background-color: #fff9ed;
+  border: none;
+  padding: 8px;
+}
+
+.btn {
+  font: inherit;
+  background-color: lightgray;
+  height: 35px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.error {
+  color: #e1f3e5;
+}

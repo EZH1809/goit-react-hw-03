@@ -1,10 +1,14 @@
-import './App.module.css';
+import css from './App.module.css';
+import ContactForm from './ContactForm/ContactForm';
 
 function App() {
   return (
-    <>
-      <h1>Vite + React</h1>
-    </>
+    <div className={css.container}>
+      <h1>Phonebook</h1>
+      <ContactForm />
+      {/* <SearchBox />
+        <ContactList /> */}
+    </div>
   );
 }
 
