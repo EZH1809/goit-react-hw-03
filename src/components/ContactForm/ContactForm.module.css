@@ -1,5 +1,9 @@
 .formContainer {
-  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  width: 360px;
   border-radius: 5px;
   padding: 10px;
   background-color: #567d6b;
@@ -8,6 +12,7 @@
 .formFieldInput {
   display: flex;
   flex-direction: column;
+  justify-content: left;
   margin-bottom: 20px;
 }
 
@@ -17,7 +22,7 @@ input {
   padding: 8px;
 }
 
-.btn {
+button {
   font: inherit;
   background-color: lightgray;
   height: 35px;
@@ -25,6 +30,6 @@ input {
   cursor: pointer;
 }
 
-.error {
+span {
   color: #e1f3e5;
 }
