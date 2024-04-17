@@ -10,10 +10,9 @@ const UserSchema = Yup.object().shape({
     .max(50, 'Too Long!')
     .required('Required'),
   number: Yup.string()
-    .min(3, 'Too Short!')
-    .max(50, 'Too Long!')
+    .matches(/^\d{3}-\d{2}-\d{2}$/, 'Invalid phone number format')
     .required('Required'),
-});
+}); 
 
 const initialValues = {
   name: '',
